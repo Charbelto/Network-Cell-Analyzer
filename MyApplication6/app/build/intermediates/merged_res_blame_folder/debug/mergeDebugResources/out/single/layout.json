@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.eece451.myapplication.app-mergeDebugResources-44:/layout/activity_main.xml",
+        "source": "com.eece451.myapplication.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.eece451.myapplication.app-mergeDebugResources-44:/layout/activity_stats.xml",
+        "source": "com.eece451.myapplication.app-main-47:/layout/activity_stats.xml"
+    }
+]
