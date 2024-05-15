@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signalStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="  Finding Signal Strenth..."
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/signalstrengthStaticText"
+        app:layout_constraintTop_toBottomOf="@+id/operatorStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/networkType"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="  Finding Network Type..."
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/networktypeStaticText"
+        app:layout_constraintTop_toBottomOf="@+id/signalstrengthStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/operatorName"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="  Finding Operator..."
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/operatorStaticText"
+        app:layout_constraintTop_toBottomOf="@+id/timeStampStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/operatorStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Operator:"
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeStampStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/signalstrengthStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Signal Strenth:"
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operatorStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/networktypeStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Network Type:"
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signalstrengthStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/cellIDStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Cell ID:"
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/networktypeStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/cellID"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="  Finding Cell ID..."
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cellIDStaticText"
+        app:layout_constraintTop_toBottomOf="@+id/networktypeStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/frequencyBandStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequency Band:"
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cellIDStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/frequencyBand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Finding Frequency Band..."
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/frequencyBandStaticText"
+        app:layout_constraintTop_toTopOf="@+id/frequencyBandStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/snrStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SNR:"
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyBandStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/snr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Finding SNR..."
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/snrStaticText"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyBandStaticText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/timeStampStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timestamp: "
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedometer"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Getting Timestamp..."
+        android:textColor="#FDFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timeStampStaticText"
+        app:layout_constraintTop_toBottomOf="@+id/speedometer"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <com.cardiomood.android.controls.gauge.SpeedometerGauge
+        android:id="@+id/speedometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Stats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snrStaticText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
