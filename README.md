@@ -136,3 +136,4 @@ python networkapp_server/app.py
 3.  Ensure the target server IP address in the Java source files (telemetry configuration class) points to your running Flask server (e.g., `http://<your-server-ip>:5000/add_network_info`).
 4.  Enable **Developer Mode** and **USB Debugging** on a physical Android phone containing a SIM card.
 5.  Press **Run** inside Android Studio to compile and deploy the app.
+ 
