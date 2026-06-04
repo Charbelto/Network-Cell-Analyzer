@@ -28,3 +28,13 @@ captures/
 *.apk
 *.ap_
 *.dex
+
+# Additional polish rules
+# .NET standard gitignore
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+.vs/
+.vscode/
